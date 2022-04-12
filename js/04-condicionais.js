@@ -1,4 +1,4 @@
-console.log("okayr")
+console.log("okay")
 
 /* Estrutura Condicional
 if, else, else if 
@@ -14,13 +14,13 @@ Operadores relacionais (usados com condicionais)
 /* exemplo 1: condicional simples */
 let numero = 10;
 
-if(numero>0){
+if(numero > 0){
     console.log(`${numero} é maior que zero`);
 }
 
 let aluno = "João";
 
-let nota1 = 6;
+let nota1 = 9;
 
 let nota2 = 8;
 
@@ -30,10 +30,16 @@ console.log(`Aluno: ${aluno}`);
 
 console.log(`Notas: ${nota1} e ${nota2}`);
 
-console.log(`Média: ${media.toFixed(2)}`)
+console.log(`Média: ${media.toFixed(2)}`);
 
 let situacao; //indefinida
-if(media>7){
+/* if(media>7){ */
+
+let faltas = 17;
+console.log(`Faltas: ${faltas}`);
+
+/* && é igual a "e" */
+if(media >= 7 && faltas < 15){
     console.log(`aprovado`);
 } else {
     console.log(`reprovado`);
