@@ -45,7 +45,7 @@ if(media >= 7 && faltas < 15){
     console.log(`reprovado`);
 }
 
-console.log(situacao);
+/* console.log(situacao); */
 
 //exemplo 3: condicional encadeada (if, else if, else)
 
