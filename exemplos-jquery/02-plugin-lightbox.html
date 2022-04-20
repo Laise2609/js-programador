@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Plugin Lightbox</title>
+<link rel="stylesheet" href="lightbox/css/lightbox.min.css">
 <style>
     #galeria-de-fotos { text-align: center; }   
 </style>
@@ -16,19 +17,26 @@
     <hr>
     
     <div id="galeria-de-fotos">
-        <a href="imagens/logo-php.png">
+        <a data-title="PHP back-end" data-lightbox="galeria" href="imagens/logo-php.png">
             <img src="imagens/logo-php-mini.jpg" alt="">
         </a>
-        <a href="imagens/logo-mysql.png">
+        <a data-title="Banco de Dados MySQL" data-lightbox="galeria" href="imagens/logo-mysql.png">
             <img src="imagens/logo-mysql-mini.gif" alt="">
         </a>
-        <a href="imagens/logo-wordpress.png">
+        <a data-title="Gerênciamento de conteúdo" data-lightbox="galeria" href="imagens/logo-wordpress.png">
             <img src="imagens/logo-wordpress-mini.png" alt="">
         </a>
     </div>
         
     <script src="js2/jquery-3.6.0.min.js"></script>
-    <script src="js2/02-plugin-lightbox.js"></script>
+    <script src="lightbox/js/lightbox.min.js"></script>
+
+    <script>
+        lightbox.option({
+            'albumlabel' : "Foto %1 de %2",
+            'wrapAround': true
+        });
+    </script>
 
 
 </body>
