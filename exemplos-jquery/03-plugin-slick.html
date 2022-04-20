@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Plugin Slick Slider</title>
+<link rel="stylesheet" href="slick/slick.css">
+<link rel="stylesheet" href="slick/slick-theme.css">
 <style>
     body { background-color: lightblue; }  
     #slider {
@@ -35,6 +37,18 @@
     </div>
 </div>    
 
+
+    <script src="js2/jquery-3.6.0.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $('#slider').slick({
+            autoplay: true,
+            autoplaySpeed: 5000
+          });
+        });
+    </script>
 
 </body>
     
